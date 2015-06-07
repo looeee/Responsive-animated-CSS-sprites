@@ -12,7 +12,7 @@ Animated Sprites with CSS and JQuery
 
 2. Make sure you have included the JQuery library. This was made with JQuery V1.11.3 but it should work with any recent version and was tested with V2.1.3. 
 
-3. Include the addSprite() function from the ResponsiveSprites.js file to your Javascript however you want. 
+3. Include the addSprite() function from the ResponsiveSprites.js file in your Javascript however you want. 
 
 4. Call the function like so:
 	```
