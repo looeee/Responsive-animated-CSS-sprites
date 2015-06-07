@@ -62,19 +62,34 @@
     background-position: 0 0%;
   }
 }
-.sprite-anim-fwd {
+.poi-anim-fwd {
   -webkit-animation: anim-fwd 0.7s steps(6) forwards;
   -moz-animation: anim-fwd 0.7s steps(6) forwards;
   -o-animation: anim-fwd 0.7s steps(6) forwards;
   animation: anim-fwd 0.7s steps(6) forwards;
 }
 
-.sprite-anim-rev {
+.poi-anim-rev {
   -webkit-animation: anim-rev 0.7s steps(6) forwards;
   -moz-animation: anim-rev 0.7s steps(6) forwards;
   -o-animation: anim-rev 0.7s steps(6) forwards;
   animation: anim-rev 0.7s steps(6) forwards;
 }
+
+.bucket-anim-fwd {
+  -webkit-animation: anim-fwd 0.7s steps(9) forwards;
+  -moz-animation: anim-fwd 0.7s steps(9) forwards;
+  -o-animation: anim-fwd 0.7s steps(9) forwards;
+  animation: anim-fwd 0.7s steps(9) forwards;
+}
+
+.bucket-anim-rev {
+  -webkit-animation: anim-rev 0.7s steps(9) forwards;
+  -moz-animation: anim-rev 0.7s steps(9) forwards;
+  -o-animation: anim-rev 0.7s steps(9) forwards;
+  animation: anim-rev 0.7s steps(9) forwards;
+}
+
 
 .sprite-parent {
   position: absolute;

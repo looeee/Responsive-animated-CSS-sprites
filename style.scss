@@ -49,13 +49,22 @@
   to { background-position: 0 0%; }
 }
 
-.sprite-anim-fwd {
+.poi-anim-fwd {
     @include spriteAnimation(anim-fwd, 6, .7s, forwards)
 } 
 
-.sprite-anim-rev {
+.poi-anim-rev {
     @include spriteAnimation(anim-rev, 6, .7s, forwards)
 } 
+
+.bucket-anim-fwd {
+    @include spriteAnimation(anim-fwd, 9, .7s, forwards)
+} 
+
+.bucket-anim-rev {
+    @include spriteAnimation(anim-rev, 9, .7s, forwards)
+} 
+
 
 .sprite-parent {
     position:absolute;

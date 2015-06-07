@@ -1,10 +1,14 @@
 $( document ).ready(function() { 
     init = function() {
         spritesDiv = $("body"); //Add the sprite to this div
-        poiImage = "http://i.imgur.com/iZTTPz3.png";
-        bucketImage = "https://minerva-looeee-1.c9.io/assets/front_page/1920/bucket-sprite-1920.png";
-        poi = addSprite(spritesDiv, "poi", poiImage, "25%", "25%", 60, 40, 7, 1, "#");
-        addHoverAnimToSprite("poi")
+        poiImage = "poi.png";
+        
+        poi = addSprite(spritesDiv, "poi", poiImage, "15%", "15%", 30, 30, 7, 1, "#");
+        addHoverAnimToSprite("poi", "poi-anim-fwd", "poi-anim-rev")
+
+        bucketImage = "bucket.png";
+        bucket = addSprite(spritesDiv, "bucket", bucketImage, "45%", "15%", 30, 30, 10);
+        addHoverAnimToSprite("bucket", "bucket-anim-fwd", "bucket-anim-rev")
     }; 
     init();
 });
@@ -85,13 +89,13 @@ function addSprite(parentDiv, spriteName, spriteImageURl, spriteXPos, spriteYPos
   return $('.' + spriteName + '-parent'); 
 }
 
-function addHoverAnimToSprite(spriteName){
+function addHoverAnimToSprite(spriteName, forwardAnimClass, revAnimClass){
     $('.'+ spriteName).hover(function () {       
-    $(this).addClass('sprite-anim-fwd ');
-    $(this).removeClass('sprite-anim-rev '); 
+    $(this).addClass(forwardAnimClass);
+    $(this).removeClass(revAnimClass); 
   },function () {
-    $(this).addClass('sprite-anim-rev ');
-    $(this).removeClass('sprite-anim-fwd ');      
+    $(this).addClass(revAnimClass);
+    $(this).removeClass(forwardAnimClass);      
   });
 }
 
