@@ -43,7 +43,7 @@ $(document).ready(function() {
 <i class="icon-file"></i> Demo
 -------------
 
-Here is a simple demo on CodePen
+[Here is a simple demo](http://codepen.io/looeee/details/XbRpOz/) on CodePen.
 
 -----
 **Notes**
