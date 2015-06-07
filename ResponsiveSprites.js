@@ -2,7 +2,7 @@ $(document).ready(function() {
   spritesDiv = $("body"); //Add the sprites to this element
   
   poiImage = "poi.png";
-  poi = addSprite(spritesDiv, "poi", poiImage, "15%", "15%", 30, 30, 7, 1, "#");
+  poi = addSprite(spritesDiv, "poi", poiImage, "15%", "15%", 30, 30, 7, true, "#");
   addHoverAnimToSprite("poi", "poi-anim-fwd", "poi-anim-rev")
 
   bucketImage = "bucket.png";
