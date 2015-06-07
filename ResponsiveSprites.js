@@ -10,7 +10,7 @@ $(document).ready(function() {
   addHoverAnimToSprite("bucket", "bucket-anim-fwd", "bucket-anim-rev")
 });
 
-// Add a responsive sprite - based on ideas from http://www.sitepoint.com/responsive-sprite-animations-imagemagick-greensock/
+// Add a responsive sprite - it will grow no wider than spriteMaxW and no taller than spriteMaxH (both defined in terms of screen %)
 function addSprite(parentDiv, spriteName, spriteImageURl, spriteXPos, spriteYPos, spriteMaxH, spriteMaxW, numFrames, isLink, linkURL) {
   var height = yPercent(spriteMaxH), //The height of the sprite, initially set to the maximum desired height
     width = spriteMaxW, //The width of the sprite, initially set to the maximum desired width
@@ -26,7 +26,7 @@ function addSprite(parentDiv, spriteName, spriteImageURl, spriteXPos, spriteYPos
         width = imgW / ((imgH / numFrames) / height);
       }
       //Set the sprites initial width and height
-      $('.' + spriteName).parent().css({
+      $('.' + spriteName).css({
         height: height + "px",
         width: width + "px"
       });
@@ -54,41 +54,30 @@ function addSprite(parentDiv, spriteName, spriteImageURl, spriteXPos, spriteYPos
       width = imgW / ((imgH / numFrames) / height);
     }
     //Set the new width and height
-    $('.' + spriteName).parent().css({
+    $('.' + spriteName).css({
       height: height + "px",
       width: width + "px"
     });
   });
 
-  parentDiv.append(
-    '<div class="' + spriteName + '-parent sprite-parent"> </div>'
-  );
-
   if (isLink) { //Make the sprite a link if required
-    $('.' + spriteName + '-parent').append('<a class="' + spriteName + ' sprite" href="' + linkURL + '"></a>');
+    parentDiv.append('<a class="' + spriteName + ' sprite" href="' + linkURL + '"></a>');
   } else { //Otherwise just place it in a div
-    $('.' + spriteName + '-parent').append('<div class="' + spriteName + ' sprite"></div>');
+    parentDiv.append('<div class="' + spriteName + ' sprite"></div>');
   }
-
+  
   $('.' + spriteName).css({
     background: 'url("' + spriteImage.src + '") no-repeat 0 0%',
     'background-size': "100%",
     position: 'absolute',
-    left: '0',
-    right: '0',
-    top: '0',
-    bottom: '0',
-  });
-
-  //Set the position of the sprite on screen using absolute positioning
-  $('.' + spriteName).parent().css({
-    position: 'absolute',
     top: spriteYPos,
     left: spriteXPos,
+    
   });
   //Return the parent div - this can be used to add animations, reposition the sprite etc.
-  return $('.' + spriteName + '-parent');
+  return $('.' + spriteName);
 }
+
 
 function addHoverAnimToSprite(spriteName, forwardAnimClass, revAnimClass) {
   $('.' + spriteName).hover(function() {
