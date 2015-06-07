@@ -1,0 +1,81 @@
+@-webkit-keyframes anim-fwd {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-moz-keyframes anim-fwd {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-o-keyframes anim-fwd {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@keyframes anim-fwd {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-webkit-keyframes anim-rev {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0%;
+  }
+}
+@-moz-keyframes anim-rev {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0%;
+  }
+}
+@-o-keyframes anim-rev {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0%;
+  }
+}
+@keyframes anim-rev {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0%;
+  }
+}
+.sprite-anim-fwd {
+  -webkit-animation: anim-fwd 0.7s steps(6) forwards;
+  -moz-animation: anim-fwd 0.7s steps(6) forwards;
+  -o-animation: anim-fwd 0.7s steps(6) forwards;
+  animation: anim-fwd 0.7s steps(6) forwards;
+}
+
+.sprite-anim-rev {
+  -webkit-animation: anim-rev 0.7s steps(6) forwards;
+  -moz-animation: anim-rev 0.7s steps(6) forwards;
+  -o-animation: anim-rev 0.7s steps(6) forwards;
+  animation: anim-rev 0.7s steps(6) forwards;
+}
+
+.sprite-parent {
+  position: absolute;
+}
