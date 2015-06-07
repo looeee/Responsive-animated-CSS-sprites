@@ -89,8 +89,3 @@
   -o-animation: anim-rev 0.7s steps(9) forwards;
   animation: anim-rev 0.7s steps(9) forwards;
 }
-
-
-.sprite-parent {
-  position: absolute;
-}
