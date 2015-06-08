@@ -2,7 +2,7 @@ Animated Sprites with CSS and JQuery
 =================================
 
 
-**Jquery function to add a responsive animated sprite from a sprite sheet. **
+*Jquery function to add a responsive animated sprite from a sprite sheet. *
 
 ----------
 
