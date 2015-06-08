@@ -8,7 +8,7 @@ Jquery function to add a responsive animated sprite from a sprite sheet.
 
 <i class="icon-file"></i> Instructions
 -------------
-1. Prepare you sprite sheet. The frames must be arranged vertically  - [here is a 10 frame sprite sheet](http://i.imgur.com/xCgd2Ob.png), with frame width **200px** and frame height **300px** giving a total of **200x3000px** with a size of **296Kb**. As you can see image size will grow very quickly as you add frames so you will want to use the minimum number of frames possible. 
+1. Prepare your sprite sheet. The frames must be arranged vertically  - [here is a 10 frame sprite sheet](http://i.imgur.com/xCgd2Ob.png), with frame width **200px** and frame height **300px** giving a total of **200x3000px** with a size of **296Kb**. As you can see image size will grow very quickly as you add frames so you will want to use the minimum number of frames possible. 
 
 2. Make sure you have included the JQuery library. This was made with JQuery V1.11.3 but it should work with any recent version and was tested with V2.1.3. 
 
